@@ -13,7 +13,7 @@ Escreva um código em Python que utilize a API pública do ViaCEP para buscar in
 import requests    #biblioteca requests   
 #import json? caso precise manipular os dados diretamente
 cep = requests.get("https://viacep.com.br/ws/01001000/json/") #método get -requests.get- (api de cep grátis)
-dados = cep.json()  #armazena a requisição na variavel dados \\ cep.json() cep é o objeto que resposta de requests, *.json* transforma do formato json pra dicionário
+dados = cep.json()  #armazena a requisição na variavel dados \\ cep.json() cep é o objeto da resposta de requests, *.json* transforma do formato json pra dicionário
 
 logradouro = dados["logradouro"]
 bairro = dados["bairro"]
